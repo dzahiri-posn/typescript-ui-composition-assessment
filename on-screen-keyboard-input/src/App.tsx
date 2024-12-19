@@ -1,17 +1,14 @@
+import { FC } from 'react'
 import './App.css'
 import { Input } from './Input'
-import { KeypadInput } from './KeypadInput'
+import { KeypadButtons } from './KeypadButtons'
 
-function App() {
-
+const App: FC = () => {
   return (
-    <>
-      <div>
-        <Input />
-        <KeypadInput />
-      </div>
-    </>
+    <div>
+      <Input />
+      <KeypadButtons />
+    </div>
   )
 }
-
-export default App
+export default App;

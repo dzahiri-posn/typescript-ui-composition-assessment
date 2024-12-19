@@ -1,7 +1,7 @@
 import { FC, InputHTMLAttributes } from 'react';
 import styled from 'styled-components';
 
-export const KeypadInputElement = styled.input`
+export const KeypadButtonElement = styled.input`
   width: 33%;
   height: 76px;
   display: flex;
@@ -22,10 +22,7 @@ export const KeypadInputElement = styled.input`
     background-color: #3653bc;
   }
 `;
-
-interface IKeypadInputButtonProps extends InputHTMLAttributes<HTMLInputElement> {
-}
-
-export const KeypadInputButton: FC<IKeypadInputButtonProps> = (props) => {
-  return <KeypadInputElement {...props} type="button" />;
+interface IKeypadButtonProps extends InputHTMLAttributes<HTMLInputElement> {}
+export const KeypadButton: FC<IKeypadButtonProps> = (props) => {
+  return <KeypadButtonElement {...props} type="button" />;
 };
